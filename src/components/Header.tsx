@@ -2,7 +2,7 @@ import * as React from 'react';
 import NextImage from 'next/image';
 
 const Header: React.FC = () => (
-    <div className="flex items-start mx-auto max-w-[65%] gap-4 justify-around">
+    <div className="flex items-start mx-auto max-w-full gap-24 justify-center">
         <div>
             <NextImage className="rounded-full" src="/images/headshot2022.jpg" width={180} height={180} />
         </div>
