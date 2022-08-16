@@ -1,8 +1,5 @@
 import * as React from 'react';
-
-interface Props {
-    children?: React.ReactNode;
-}
+import Header from './Header';
 
 const Waves: React.FC = () => (
     <div className="absolute bottom-0 w-full">
@@ -51,10 +48,17 @@ const Waves: React.FC = () => (
     </div>
 );
 
+interface Props {
+    children?: React.ReactNode;
+}
+
 const Layout: React.FC<Props> = ({ children }) => {
     return (
-        <div className="bg-gradient-60 from-[#48c6ef] to-[blue] min-h-screen">
-            <div>{children}</div>
+        <div className="bg-gradient-60 from-[#48c6ef] to-[blue] min-h-screen flex items-start justify-center pt-16 font-nunito">
+            <div className="bg-white mx-auto w-[60%] max-w-[60%] shadow-md rounded h-[80vh] p-10">
+                <Header />
+                <div>{children}</div>
+            </div>
             <Waves />
         </div>
     );
