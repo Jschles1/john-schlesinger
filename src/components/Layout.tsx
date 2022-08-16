@@ -1,5 +1,6 @@
 import * as React from 'react';
 import Header from './Header';
+import Navigation from './Navigation';
 
 const Waves: React.FC = () => (
     <div className="absolute bottom-0 w-full">
@@ -57,6 +58,7 @@ const Layout: React.FC<Props> = ({ children }) => {
         <div className="bg-gradient-60 from-[#48c6ef] to-[blue] min-h-screen flex items-start justify-center pt-16 font-nunito">
             <div className="bg-white mx-auto w-[60%] max-w-[60%] shadow-md rounded h-[80vh] p-10">
                 <Header />
+                <Navigation />
                 <div>{children}</div>
             </div>
             <Waves />
