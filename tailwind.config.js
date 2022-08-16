@@ -30,6 +30,21 @@ module.exports = {
                 3000: '13s',
                 4000: '20s',
             },
+            fontFamily: {
+                nunito: [
+                    'Nunito',
+                    '-apple-system',
+                    'BlinkMacSystemFont',
+                    '"Segoe UI"',
+                    'Roboto',
+                    '"Helvetica Neue"',
+                    'Arial',
+                    'sans-serif',
+                    '"Apple Color Emoji"',
+                    '"Segoe UI Emoji"',
+                    '"Segoe UI Symbol"',
+                ].join(','),
+            },
         },
     },
     plugins: [
