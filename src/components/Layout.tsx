@@ -1,6 +1,7 @@
 import * as React from 'react';
 import Header from './Header';
 import Navigation from './Navigation';
+import ContentContainer from './ContentContainer';
 import Waves from './Waves';
 
 interface Props {
@@ -13,7 +14,7 @@ const Layout: React.FC<Props> = ({ children }) => {
             <div className="bg-white mx-auto w-[70%] xl:w-[60%] shadow-md rounded h-[80vh] p-10">
                 <Header />
                 <Navigation />
-                <div>{children}</div>
+                <ContentContainer>{children}</ContentContainer>
             </div>
             <Waves />
         </div>
