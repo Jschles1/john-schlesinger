@@ -9,9 +9,9 @@ const Experience: NextPage = () => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <main>
+            <div>
                 <h2>Work Experience</h2>
-            </main>
+            </div>
         </div>
     );
 };

@@ -9,9 +9,9 @@ const Contact: NextPage = () => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <main>
+            <div>
                 <h2>Contact</h2>
-            </main>
+            </div>
         </div>
     );
 };

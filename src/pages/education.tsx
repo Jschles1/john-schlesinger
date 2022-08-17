@@ -9,9 +9,9 @@ const Education: NextPage = () => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <main>
+            <div>
                 <h2>Education</h2>
-            </main>
+            </div>
         </div>
     );
 };
