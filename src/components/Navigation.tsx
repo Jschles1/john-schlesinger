@@ -7,6 +7,7 @@ interface LinkProps {
     name: string;
     activeHref: string;
 }
+
 const Link: React.FC<LinkProps> = ({ href, name, activeHref }) => {
     const textStyle = href === activeHref ? 'font-bold border-b border-black' : 'font-normal';
     return (
@@ -22,13 +23,14 @@ const Navigation: React.FC = () => {
     return (
         <div className="mt-6">
             <hr />
-            <div className="flex mx-auto w-full gap-2 mt-6 justify-around">
+            <div className="flex mx-auto w-full gap-2 my-6 justify-around">
                 <Link href="/" name="About" activeHref={activeHref} />
                 <Link href="/education" name="Education" activeHref={activeHref} />
                 <Link href="/experience" name="Work Experience" activeHref={activeHref} />
                 <Link href="/projects" name="Projects" activeHref={activeHref} />
                 <Link href="/contact" name="Contact" activeHref={activeHref} />
             </div>
+            <hr />
         </div>
     );
 };
