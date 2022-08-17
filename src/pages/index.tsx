@@ -1,16 +1,17 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import Image from 'next/image';
 
 const Home: NextPage = () => {
     return (
-        <div className="">
+        <div>
             <Head>
-                <title>Create Next App</title>
+                <title>John Schlesinger - About Me</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <main className=""></main>
+            <main>
+                <h2>About Me</h2>
+            </main>
         </div>
     );
 };
