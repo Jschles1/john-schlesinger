@@ -1,9 +1,9 @@
 import * as React from 'react';
 
 const Waves: React.FC = () => (
-    <div className="absolute bottom-0 w-full">
+    <div className="absolute bottom-[7px] w-full">
         <svg
-            className="relative w-full mb-[-7px] max-h-[10vh]"
+            className="relative w-full mb-[-7px] max-h-[6.5vh]"
             xmlns="http://www.w3.org/2000/svg"
             xmlnsXlink="http://www.w3.org/1999/xlink"
             viewBox="0 24 150 28"

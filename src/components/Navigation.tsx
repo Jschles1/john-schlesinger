@@ -9,7 +9,7 @@ interface LinkProps {
 }
 
 const Link: React.FC<LinkProps> = ({ href, name, activeHref }) => {
-    const textStyle = href === activeHref ? 'font-bold border-b border-black' : 'font-normal';
+    const textStyle = href === activeHref ? 'font-bold border-b border-white' : 'font-normal';
     return (
         <NextLink href={href}>
             <a className={textStyle}>{name}</a>
