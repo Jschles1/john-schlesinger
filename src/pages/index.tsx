@@ -1,5 +1,8 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import SectionHeader from '../components/SectionHeader';
+import Skill from '../components/Skill';
+import { skills } from '../lib/data';
 
 const Home: NextPage = () => {
     return (
@@ -9,7 +12,16 @@ const Home: NextPage = () => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <h2>About Me</h2>
+            <section>
+                <SectionHeader>Skills and Qualifications:</SectionHeader>
+                <ul>
+                    {skills.map((skill) => (
+                        <Skill key={skill}>{skill}</Skill>
+                    ))}
+                </ul>
+            </section>
+
+            <br />
         </>
     );
 };
