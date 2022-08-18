@@ -2,7 +2,12 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import SectionHeader from '../components/SectionHeader';
 import Skill from '../components/Skill';
-import { skills } from '../lib/data';
+
+const skills = [
+    '5 years experience with frontend development.',
+    'Extensive knowledge of JavaScript including libraries and frameworks such as React, NextJS, and jQuery.',
+    'Expertise in implementing scalable CSS designs using SCSS and libraries such as MaterialUI and TailwindCSS.',
+];
 
 const Home: NextPage = () => {
     return (
@@ -22,6 +27,10 @@ const Home: NextPage = () => {
             </section>
 
             <br />
+
+            <section>
+                <SectionHeader>Programming Experience:</SectionHeader>
+            </section>
         </>
     );
 };
