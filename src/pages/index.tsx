@@ -3,6 +3,7 @@ import Head from 'next/head';
 import SectionHeader from '../components/SectionHeader';
 import Skill from '../components/Skill';
 import ProgrammingExperienceItem from '../components/ProgrammingExperienceItem';
+import Project from '../components/Project';
 
 const skills = [
     '5 years experience with frontend development.',
@@ -23,6 +24,24 @@ const programmingExperience = [
             "Led a team of three mid-level engineers to integrate Avon's frontend checkout flow with Cybersource's payment processor, allowing Avon to meet PCI security standards for their website.",
             'Served as frontend lead on project to create an LG ecommerce store exclusively for LG employees and LG partners.',
         ],
+    },
+];
+
+const projects = [
+    {
+        name: 'Notes App',
+        emoji: '\\uD83D\\uDCDD',
+        description: 'Full-Stack iOS Notes app clone using NextJS, Typescript, GraphQL and MongoDB.',
+    },
+    {
+        name: 'Fitness App',
+        emoji: '\\uD83C\\uDFCB',
+        description: 'Full-Stack app using jQuery, Ruby on Rails, PostgreSQL to help trainers track clients.',
+    },
+    {
+        name: 'Flashcards App',
+        emoji: '\\uD83C\\uDCCF',
+        description: 'Single page application built with React and Ruby on Rails with an SQLite database.',
     },
 ];
 
@@ -59,6 +78,17 @@ const Home: NextPage = () => {
                         />
                     ))}
                 </div>
+            </section>
+
+            <br />
+
+            <section>
+                <SectionHeader>Programming Projects:</SectionHeader>
+                <ul className="pl-8 mb-4">
+                    {projects.map((p) => (
+                        <Project name={p.name} emoji={p.emoji} description={p.description} />
+                    ))}
+                </ul>
             </section>
         </>
     );
