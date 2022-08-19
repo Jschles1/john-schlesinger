@@ -28,7 +28,7 @@ const ProgrammingExperienceItem: React.FC<Props> = ({
             <p>{description}</p>
             <ul className="pl-8 my-4">
                 {accomplishments.map((a) => (
-                    <li className="list-item list-disc" key={a}>
+                    <li className="list-item list-disc my-3" key={a}>
                         {a}
                     </li>
                 ))}

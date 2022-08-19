@@ -7,7 +7,7 @@ interface Props {
 }
 
 const Project: React.FC<Props> = ({ name, emoji, description }) => (
-    <li className="list-item list-disc">
+    <li className="list-item list-disc my-3">
         <strong>
             {emoji} {name}
         </strong>

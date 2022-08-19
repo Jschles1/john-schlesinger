@@ -4,6 +4,7 @@ import SectionHeader from '../components/SectionHeader';
 import Skill from '../components/Skill';
 import ProgrammingExperienceItem from '../components/ProgrammingExperienceItem';
 import Project from '../components/Project';
+import EducationItem from '../components/EducationItem';
 
 const skills = [
     '5 years experience with frontend development.',
@@ -45,6 +46,21 @@ const projects = [
     },
 ];
 
+const education = [
+    {
+        name: 'Flatiron School Web Development Bootcamp',
+        location: 'New York, NY',
+        description: 'JavaScript and Ruby on Rails Certification',
+        date: 'Oct 2017',
+    },
+    {
+        name: 'Ramapo College, Anisfield School of Business',
+        location: 'Mahwah, NJ',
+        description: 'Bachelor of Business Administration, Marketing',
+        date: 'May 2014',
+    },
+];
+
 const Home: NextPage = () => {
     return (
         <>
@@ -55,7 +71,7 @@ const Home: NextPage = () => {
 
             <section>
                 <SectionHeader>Skills and Qualifications:</SectionHeader>
-                <ul>
+                <ul className="pl-2">
                     {skills.map((skill) => (
                         <Skill key={skill}>{skill}</Skill>
                     ))}
@@ -87,6 +103,17 @@ const Home: NextPage = () => {
                 <ul className="pl-8 mb-4">
                     {projects.map((p) => (
                         <Project name={p.name} emoji={p.emoji} description={p.description} />
+                    ))}
+                </ul>
+            </section>
+
+            <br />
+
+            <section>
+                <SectionHeader>Education:</SectionHeader>
+                <ul className="mb-4">
+                    {education.map((e) => (
+                        <EducationItem name={e.name} location={e.location} date={e.date} description={e.description} />
                     ))}
                 </ul>
             </section>
