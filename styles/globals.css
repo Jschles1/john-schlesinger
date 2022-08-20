@@ -23,8 +23,20 @@
     @apply h-[70%];
 }
 
+@media (max-width: 768px) {
+    .content {
+        @apply h-[55%];
+    }
+}
+
 @media (max-width: 415px) {
     .content {
         @apply h-[50%];
+    }
+}
+
+@media (max-width: 360px) {
+    .content {
+        @apply h-[45%];
     }
 }
