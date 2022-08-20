@@ -9,7 +9,7 @@ import EducationItem from '../components/EducationItem';
 const skills = [
     '5 years experience with frontend development.',
     'Extensive knowledge of Javascript including libraries and frameworks such as React, NextJS, and jQuery.',
-    'Expertise in implementing scalable CSS designs using SCSS and libraries such as MaterialUI and TailwindCSS.',
+    'Expertise in implementing designs using CSS and CSS libraries such as MaterialUI and TailwindCSS.',
 ];
 
 const programmingExperience = [
