@@ -8,7 +8,7 @@ import EducationItem from '../components/EducationItem';
 
 const skills = [
     '5 years experience with frontend development.',
-    'Extensive knowledge of JavaScript including libraries and frameworks such as React, NextJS, and jQuery.',
+    'Extensive knowledge of Javascript including libraries and frameworks such as React, NextJS, and jQuery.',
     'Expertise in implementing scalable CSS designs using SCSS and libraries such as MaterialUI and TailwindCSS.',
 ];
 
@@ -18,7 +18,8 @@ const programmingExperience = [
         company: 'Encora Technolgoies',
         startDate: 'January 2018',
         endDate: 'Present',
-        description: 'Job Description',
+        description:
+            'Used my expertise in HTML, CSS and Javascript to implement rich user experiences for client websites, primarily ecommerce.',
         accomplishments: [
             "Led frontend team for the marketing section of 1800Flower's PWA that was featured at Google I/O 2019 for being the first PWA app to be featured in Google's play store via Trusted Web Activities.",
             "Worked closely with client design teams to implement new design on LG's ecommerce site, resulting in higher conversions due to a better user experience.",
