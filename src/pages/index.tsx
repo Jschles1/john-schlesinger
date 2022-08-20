@@ -85,6 +85,7 @@ const Home: NextPage = () => {
                 <div>
                     {programmingExperience.map((job) => (
                         <ProgrammingExperienceItem
+                            key={job.role}
                             role={job.role}
                             company={job.company}
                             startDate={job.startDate}
@@ -102,7 +103,7 @@ const Home: NextPage = () => {
                 <SectionHeader>Programming Projects:</SectionHeader>
                 <ul className="pl-8 mb-4">
                     {projects.map((p) => (
-                        <Project name={p.name} emoji={p.emoji} description={p.description} />
+                        <Project key={p.name} name={p.name} emoji={p.emoji} description={p.description} />
                     ))}
                 </ul>
             </section>
@@ -113,7 +114,13 @@ const Home: NextPage = () => {
                 <SectionHeader>Education:</SectionHeader>
                 <ul className="mb-4">
                     {education.map((e) => (
-                        <EducationItem name={e.name} location={e.location} date={e.date} description={e.description} />
+                        <EducationItem
+                            key={e.name}
+                            name={e.name}
+                            location={e.location}
+                            date={e.date}
+                            description={e.description}
+                        />
                     ))}
                 </ul>
             </section>
