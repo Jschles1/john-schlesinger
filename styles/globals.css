@@ -18,3 +18,13 @@
     background: rgba(255, 255, 255, 0.5);
     border-radius: 30px;
 }
+
+.content {
+    @apply h-[70%];
+}
+
+@media (max-width: 415px) {
+    .content {
+        @apply h-[50%];
+    }
+}

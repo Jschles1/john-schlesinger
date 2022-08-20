@@ -20,7 +20,7 @@ const ContentContainer: React.FC<Props> = ({ children }) => {
     };
 
     return (
-        <div className="h-[70%]">
+        <div className="content">
             <main
                 ref={ref}
                 onScroll={handleScroll}
