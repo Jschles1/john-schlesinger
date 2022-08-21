@@ -21,6 +21,7 @@ const Header: React.FC = () => {
                     src="/images/headshot2022.jpg"
                     width={imageDimensions.width}
                     height={imageDimensions.height}
+                    priority
                 />
             </div>
             <div className="h-full relative">
