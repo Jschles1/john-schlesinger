@@ -14,13 +14,11 @@ const Project: React.FC<Props> = ({ name, description, details, ctaLink }) => (
         <p className="font-bold mb-3">{name}</p>
         <p>{description}</p>
         <ul className="pl-8 my-4">
-            <ul className="pl-8 my-4">
-                {details.map((detail) => (
-                    <li className="list-item list-disc my-3" key={detail}>
-                        {detail}
-                    </li>
-                ))}
-            </ul>
+            {details.map((detail) => (
+                <li className="list-item list-disc my-3" key={detail}>
+                    {detail}
+                </li>
+            ))}
         </ul>
         <p>
             Visit the website here:{' '}

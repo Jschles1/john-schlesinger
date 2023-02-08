@@ -34,9 +34,3 @@
         @apply h-full;
     }
 }
-
-/* @media (max-width: 360px) {
-    .content {
-        @apply h-[45%];
-    }
-} */

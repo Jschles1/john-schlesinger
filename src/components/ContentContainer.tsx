@@ -23,7 +23,7 @@ const ContentContainer: React.FC<Props> = ({ children }) => {
     };
 
     React.useEffect(() => {
-        // If no scrollbar, no need to show gradient
+        // If no scrollbar, no need to show gradient effect on text
         if (!isMobile) {
             ref.current?.classList.add('scrollbar');
             ref.current?.classList.add('scrollbar-thumb-white');
@@ -42,15 +42,8 @@ const ContentContainer: React.FC<Props> = ({ children }) => {
 
     return (
         <div className="content">
-            <main
-                ref={ref}
-                onScroll={handleScroll}
-                className="pr-12 h-full mt-4 -mr-4"
-                // className="pr-12 h-full mt-4 -mr-4 scrollbar scrollbar-thumb-white scrollbar-track-transparent sbar"
-                // className="pr-12 h-full mt-4 -mr-4 scrollbar xs:scrollbar-thumb-white xs:scrollbar-track-transparent sbar"
-            >
+            <main ref={ref} onScroll={handleScroll} className="pr-12 h-full mt-4 -mr-4">
                 {children}
-                {/* <Waves desktop={false} mobile={true} /> */}
             </main>
         </div>
     );

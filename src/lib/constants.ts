@@ -1,5 +1,5 @@
 export const SKILLS = [
-    '6 years experience with frontend development.',
+    '5 years experience with frontend development.',
     'Extensive knowledge of Javascript including libraries and frameworks such as React, NextJS, and jQuery.',
     'Expertise in implementing designs using CSS and CSS libraries such as MaterialUI and TailwindCSS.',
 ];
@@ -54,6 +54,7 @@ export const PROJECTS = [
             'Hosted on Vercel.',
             'Utilizes AWS Lambda, AWS Step Functions and AWS EventBridge scheduler for running Puppeteer web crawlers to retrieve product information from each NJ dispensary website and save it to a MongoDB database on a daily basis.',
         ],
+        images: [],
         ctaLink: 'https://herbhub-client.vercel.app/',
     },
 ];
