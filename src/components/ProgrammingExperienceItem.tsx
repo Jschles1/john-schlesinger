@@ -5,18 +5,10 @@ interface Props {
     company: string;
     startDate: string;
     endDate: string;
-    description: string;
     accomplishments: string[];
 }
 
-const ProgrammingExperienceItem: React.FC<Props> = ({
-    role,
-    company,
-    startDate,
-    endDate,
-    description,
-    accomplishments,
-}) => (
+const ProgrammingExperienceItem: React.FC<Props> = ({ role, company, startDate, endDate, accomplishments }) => (
     <div>
         <div className="[&>p]:my-4 pb-4">
             <strong>
@@ -25,7 +17,6 @@ const ProgrammingExperienceItem: React.FC<Props> = ({
             <p>
                 {startDate} - {endDate}
             </p>
-            <p>{description}</p>
             <ul className="pl-8 my-4">
                 {accomplishments.map((a) => (
                     <li className="list-item list-disc my-3" key={a}>

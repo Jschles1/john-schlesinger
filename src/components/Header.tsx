@@ -1,5 +1,6 @@
 import * as React from 'react';
 import NextImage from 'next/image';
+import Link from 'next/link';
 import useMediaQuery from '../lib/useMediaQuery';
 
 const Header: React.FC = () => {
@@ -25,7 +26,9 @@ const Header: React.FC = () => {
                 />
             </div>
             <div className="h-full relative">
-                <h1 className="text-xl xs:text-4xl font-bold my-3 xs:my-6">John Schlesinger</h1>
+                <h1 className="text-xl xs:text-4xl font-bold my-3 xs:my-6 hover:underline">
+                    <Link href="/">John Schlesinger</Link>
+                </h1>
                 <div className="[&>p]:mb-1">
                     <p>&#128187; Senior Frontend Engineer</p>
                     <p>&#127947; Former Certified Personal Trainer</p>

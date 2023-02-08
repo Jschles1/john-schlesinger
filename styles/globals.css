@@ -31,12 +31,12 @@
 
 @media (max-width: 415px) {
     .content {
-        @apply h-[50%];
+        @apply h-full;
     }
 }
 
-@media (max-width: 360px) {
+/* @media (max-width: 360px) {
     .content {
         @apply h-[45%];
     }
-}
+} */
