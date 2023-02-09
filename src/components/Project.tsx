@@ -1,17 +1,19 @@
 import * as React from 'react';
 import NextLink from 'next/link';
+import ProjectScreenshots from './ProjectScreenshots';
 
 interface Props {
     name: string;
-    // emoji: string;
     description: string;
     details: string[];
     ctaLink: string;
+    images: { src: string; title: string }[];
 }
 
-const Project: React.FC<Props> = ({ name, description, details, ctaLink }) => (
+const Project: React.FC<Props> = ({ name, description, details, ctaLink, images }) => (
     <div>
         <p className="font-bold mb-3">{name}</p>
+        <ProjectScreenshots images={images} />
         <p>{description}</p>
         <ul className="pl-8 my-4">
             {details.map((detail) => (

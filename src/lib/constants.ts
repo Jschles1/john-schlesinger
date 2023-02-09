@@ -54,7 +54,10 @@ export const PROJECTS = [
             'Hosted on Vercel.',
             'Utilizes AWS Lambda, AWS Step Functions and AWS EventBridge scheduler for running Puppeteer web crawlers to retrieve product information from each NJ dispensary website and save it to a MongoDB database on a daily basis.',
         ],
-        images: [],
+        images: [
+            { src: '/images/herbhub-home.png', title: 'HerbHub NJ Home Page' },
+            { src: '/images/herbhub-pdp.png', title: 'HerbHub NJ PDP Page' },
+        ],
         ctaLink: 'https://herbhub-client.vercel.app/',
     },
 ];

@@ -58,6 +58,7 @@ module.exports = {
         require('tailwindcss-animation'),
         require('tailwind-scrollbar'),
         require('tailwind-gradient-mask-image'),
+        require('tailwindcss-radix')(),
         plugin(function ({ matchUtilities, theme }) {
             matchUtilities(
                 {

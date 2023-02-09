@@ -1,3 +1,4 @@
+import * as React from 'react';
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import NextLink from 'next/link';
@@ -6,7 +7,6 @@ import Project from '../components/Project';
 import { PROJECTS } from '../lib/constants';
 
 const Projects: NextPage = () => {
-    console.log(PROJECTS);
     return (
         <>
             <Head>
@@ -33,6 +33,7 @@ const Projects: NextPage = () => {
                         details={project.details}
                         ctaLink={project.ctaLink}
                         key={project.name}
+                        images={project.images}
                     />
                 ))}
             </section>
