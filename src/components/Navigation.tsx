@@ -24,7 +24,13 @@ const Navigation: React.FC = () => {
                 <Link href="/projects" name="Personal Projects" />
                 <Link href="https://www.linkedin.com/in/john-schlesinger-21438362/" name="LinkedIn" />
                 <Link href="https://github.com/Jschles1" name="GitHub" />
-                <Link href="#" name="Download Resume" />
+                <a
+                    href="assets/john-schlesinger-resume-2023"
+                    download
+                    className="font-normal border-b border-transparent hover:font-bold hover:border-white basis-[48%] xs:basis-auto"
+                >
+                    Download Resume
+                </a>
             </div>
             <hr />
         </div>
