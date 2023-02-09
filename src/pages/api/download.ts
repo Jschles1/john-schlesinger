@@ -13,7 +13,7 @@ const s3 = new S3Client(awsConfig);
 
 const handler = async (req: NextApiRequest, res: NextApiResponse) => {
     const getCommand: GetObjectCommand = new GetObjectCommand({
-        Bucket: process.env.AWS_BUCKET_NAME,
+        Bucket: process.env.MY_AWS_BUCKET_NAME,
         Key: 'john-schlesinger-resume-2023.pdf',
     });
 
