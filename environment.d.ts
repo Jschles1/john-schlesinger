@@ -1,10 +1,10 @@
 declare global {
     namespace NodeJS {
         interface ProcessEnv {
-            AWS_ACCESS_KEY: string;
-            AWS_SECRET_KEY: string;
-            AWS_REGION: string;
-            AWS_BUCKET_NAME: string;
+            MY_AWS_ACCESS_KEY: string;
+            MY_AWS_SECRET_KEY: string;
+            MY_AWS_REGION: string;
+            MY_AWS_BUCKET_NAME: string;
         }
     }
 }
