@@ -7,7 +7,7 @@ export const SKILLS = [
 export const EXPERIENCE = [
     {
         role: 'Senior Frontend Developer',
-        company: 'Encora Technolgoies',
+        company: 'Encora Technologies',
         startDate: 'December 2020',
         endDate: 'February 2023',
         accomplishments: [
@@ -18,13 +18,13 @@ export const EXPERIENCE = [
     },
     {
         role: 'Frontend Developer',
-        company: 'Encora Technolgoies',
+        company: 'Encora Technologies',
         startDate: 'January 2018',
         endDate: 'December 2020',
         accomplishments: [
             'Utilized HTML, CSS, and JavaScript to design and implement user interfaces.',
-            'Provide proficiency and guidance on front-end libraries such as React.',
-            'Performed usability research, ensured compatibility, and optimize performance to increase conversions on ecommerce solutions for brands such as 1800flowers.',
+            'Provided proficiency and guidance on frontend libraries such as React.',
+            'Performed usability research, ensured compatibility, and optimized performance to increase conversions on ecommerce solutions for brands such as 1-800-Flowers.',
         ],
     },
 ];
